@@ -1,0 +1,97 @@
+[gd_scene load_steps=2 format=3 uid="uid://yixpawj6u1m0"]
+
+[ext_resource type="Script" uid="uid://btlj4i3efrhta" path="res://Scripts/upgrade_menu.gd" id="1_ltp0x"]
+
+[node name="UpgradeMenu" type="Node2D"]
+visible = false
+script = ExtResource("1_ltp0x")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1151.0
+offset_bottom = 657.0
+color = Color(0, 0, 0, 1)
+
+[node name="Button" type="Button" parent="."]
+offset_right = 209.0
+offset_bottom = 68.0
+text = "Back"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_top = 96.0
+offset_right = 626.0
+offset_bottom = 259.0
+scale = Vector2(1.84, 1.84)
+theme_override_constants/separation = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 11
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Upgrades: "
+
+[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Upgrade1"
+
+[node name="Label3" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Upgrade2"
+
+[node name="Label4" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Upgrade3"
+
+[node name="Label5" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Upgrade4"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 11
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Description:"
+
+[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Increase Faith Growth +1 each continent"
+
+[node name="Label3" type="Label" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Increase Faith Growth +2 each continent"
+
+[node name="Label4" type="Label" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Increase Faith Growth +3 each continent"
+
+[node name="Label5" type="Label" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Increase Faith Growth +4 each continent"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "Costs:"
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "2 Virtue Points"
+
+[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "6 Virtue Points"
+
+[node name="Button3" type="Button" parent="HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "14 Virtue Points"
+
+[node name="Button4" type="Button" parent="HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "30 Virtue Points"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

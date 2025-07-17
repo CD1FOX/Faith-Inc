@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://djphcxm4upkde"]
+
+[ext_resource type="PackedScene" uid="uid://b0oqakef4hnn7" path="res://Scenes/resources_UI.tscn" id="1_b7gke"]
+[ext_resource type="PackedScene" uid="uid://yixpawj6u1m0" path="res://Scenes/upgrade_menu.tscn" id="1_rvr0e"]
+[ext_resource type="PackedScene" uid="uid://8gcgqc83oui8" path="res://Scenes/Continents/asia.tscn" id="3_llh6y"]
+
+[node name="WorldMap" type="Node2D"]
+
+[node name="Resources_UI" parent="." instance=ExtResource("1_b7gke")]
+
+[node name="Asia" parent="." instance=ExtResource("3_llh6y")]
+position = Vector2(996, 306)
+
+[node name="UpgradeMenu" parent="." instance=ExtResource("1_rvr0e")]
