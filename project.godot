@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Faith"
+config/name="Faith Inc"
 run/main_scene="uid://bhw4ptg5mp6b7"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
